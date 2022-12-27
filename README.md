@@ -1,6 +1,6 @@
 # MechaCar_Statistical_Analysis
 
-[https://github.com/cmason1996/MechaCar_Statistical_Analysis/blob/main/MechaCarChallenge.R](Click here to view the MechaCarChallenge.R file)
+<a href="https://github.com/cmason1996/MechaCar_Statistical_Analysis/blob/main/MechaCarChallenge.R" target="_blank">Click here to view the MechaCarChallenge.R file</a>
 
 ## Project Overview
 
