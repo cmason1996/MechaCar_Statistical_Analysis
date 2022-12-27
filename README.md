@@ -1,6 +1,6 @@
 # MechaCar_Statistical_Analysis
 
-Click here to view the RScript file: ([https://github.com/cmason1996/MechaCar_Statistical_Analysis/blob/main/MechaCarChallenge.R](MechaCarChallenge.R))
+[https://github.com/cmason1996/MechaCar_Statistical_Analysis/blob/main/MechaCarChallenge.R](Click here to view the MechaCarChallenge.R file)
 
 ## Project Overview
 
