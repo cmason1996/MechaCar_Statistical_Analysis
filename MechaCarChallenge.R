@@ -1,6 +1,8 @@
 # Load in the dplyr package
 library(dbplyr)
 
+### DELIVERABLE 1 ###
+
 # Import the MechaCar_mpg.csv file
 MechaCar_mpg <- read.csv('MechaCar_mpg.csv',check.names = F,stringsAsFactors = F)
 
@@ -33,6 +35,8 @@ summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_cleara
 #  Multiple R-squared:  0.7149,	Adjusted R-squared:  0.6825 
 #  F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11
 
+### DELIVERABLE 2 ###
+
 # Import the Suspension_Coil.csv file
 Suspension_Coil <- read.csv('Suspension_Coil.csv',check.names = F,stringsAsFactors = F)
 
@@ -44,8 +48,21 @@ total_summary <- summarize(Suspension_Coil, Mean=mean(PSI), Median=median(PSI), 
 # Create a dataframe to hold summary statistics for Suspension_Coil.csv grouping by lot number
 lot_summary <- Suspension_Coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI))
 
+### DELIVERABLE 3 ###
 
+# Perform a t.test() to determine if the PSI is different across all manufacturing units is statistically different from the population mean of 1500
+t.test(Suspension_Coil$PSI, mu = 1500)
 
+# Perform 3 more t.test() to see determine if the PSI of each manufacturing lot is statistically different from the population mean of 1500
+## Separating the data into three different tables using subset()
+lot1 <- subset(Suspension_Coil, Manufacturing_Lot == 'Lot1')
+lot2 <- subset(Suspension_Coil, Manufacturing_Lot == 'Lot2')
+lot3 <- subset(Suspension_Coil, Manufacturing_Lot == 'Lot3')
 
-
-
+## Performing t.test() on each lot
+t.test(lot1$PSI, mu =1500)
+  # p-value = 1
+t.test(lot2$PSI, mu =1500)
+  # p-value = 0.6072
+t.test(lot3$PSI, mu =1500)
+  # p-value = 0.04168
