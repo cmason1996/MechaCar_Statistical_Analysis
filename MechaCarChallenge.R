@@ -1,7 +1,7 @@
 # Load in the dplyr package
 library(dbplyr)
 
-# import the MechaCar_mpg.csv
+# Import the MechaCar_mpg.csv file
 MechaCar_mpg <- read.csv('MechaCar_mpg.csv',check.names = F,stringsAsFactors = F)
 
 # Create a linear model of the dataframe using all 6 columns and the dataframe as the data parameter
@@ -32,4 +32,20 @@ summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_cleara
 #  Residual standard error: 8.774 on 44 degrees of freedom
 #  Multiple R-squared:  0.7149,	Adjusted R-squared:  0.6825 
 #  F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11
+
+# Import the Suspension_Coil.csv file
+Suspension_Coil <- read.csv('Suspension_Coil.csv',check.names = F,stringsAsFactors = F)
+
+library(tidyverse)
+
+# Create a dataframe to hold the summary statistics data for the Suspension_Coil.csv
+total_summary <- summarize(Suspension_Coil, Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI))
+
+# Create a dataframe to hold summary statistics for Suspension_Coil.csv grouping by lot number
+lot_summary <- Suspension_Coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI))
+
+
+
+
+
 
