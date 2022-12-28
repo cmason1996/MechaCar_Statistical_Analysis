@@ -24,7 +24,9 @@ The purpose of this analysis is to run statistical tests on the MPG and suspensi
 
 ## Summary Statistics on Suspension Coils
 
-insert pictures of total_summary and lot_summary here
+<img width="297" alt="totals_summary" src="https://user-images.githubusercontent.com/112291888/209743243-6f6b0793-ec0b-4714-ab68-9c5a6f1e317a.png">
+
+<img width="435" alt="lot_summary" src="https://user-images.githubusercontent.com/112291888/209743249-3e6fb8d6-82fa-49ef-9276-b34dc7324525.png">
 
 * Looking at the total_summary of all of the manufacturing lots we see that the variance is 62.29356 and is well within the limit of 100 PSI of variance. However, when we break down the analysis to look at all three manufacturing lots we see that while the Lot1 and Lot2 are within the tolerance levels, Lot3 well exceeds the 100 PSI varience and would lead to future failures or an uneven distribution of weight on all contact points with the ground should any units from that manufacturing lot make it into production. 
 
