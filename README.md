@@ -14,7 +14,9 @@ The purpose of this analysis is to run statistical tests on the MPG and suspensi
 
 ## Linear Regression to Predict MPG
 
-insert the pictures of the linear regression models here
+<img width="729" alt="linear_regression" src="https://user-images.githubusercontent.com/112291888/209743181-61e9dba5-a82b-404b-a0be-5a4ec59eba07.png">
+
+<img width="476" alt="linear_regression_summary" src="https://user-images.githubusercontent.com/112291888/209743188-e0421901-c675-4750-833c-0a71c26b0d4a.png">
 
 * The variance of non-random variables is typically 0. Given this, the intercept, vehicle length, and ground clearance coefficients can be assumed to be non-random variables and would therefore not give a siginificant amount of variance to the MPG values. This is most likely due to the fact that the vehicle length and ground clearance do not change on a vehicle after the production stage.
 * At a significance level of 0.05 we are able to reject the null hypothesis of the slope of our line being 0. Our p-value was 5.35e-11 which is much smaller than our siginficance level. 
