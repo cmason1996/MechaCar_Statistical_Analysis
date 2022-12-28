@@ -32,11 +32,11 @@ The purpose of this analysis is to run statistical tests on the MPG and suspensi
 
 ## T-Tests on Suspension Coils
 
-insert picture of single t test here
+<img width="367" alt="population_t_test" src="https://user-images.githubusercontent.com/112291888/209743297-7eff48ed-d79e-45f6-9902-89ecd6957214.png">
 
 Using a siginficance level of 0.05 we are unable to reject the null hypothesis as our p-value is 0.06028. Meaning that we cannot reject our sample mean being close to our population mean. A point of interest is that our confidence interval is very narrow for this t-test and the the subsequent t-tests run on the three different manufacturing lots of suspension coils. While this means that we have a narrow probability of observing values in this range is also means that we will have greater accuracy overall with our data.
 
-insert picture of lot t tests here
+<img width="369" alt="lot_t_test" src="https://user-images.githubusercontent.com/112291888/209743301-7f7679d3-f737-457b-a629-37e4482d437e.png">
 
 ### Lot1
 
